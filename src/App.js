@@ -11,13 +11,19 @@ const getLocalStorage = () => {
   }
 }
 
+
+
 function App() {
+
 
   const [name, setName] = useState('')
   const [list, setList] = useState(getLocalStorage())
   const [isEditing, setIsEditing] = useState(false)
   const [editId, setEditId] = useState(null)
   const [alert, setAlert] = useState({show: false, msg:'', type:''})
+  const [complete, setComplete] = useState(false)
+
+  console.log(list)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -39,7 +45,7 @@ function App() {
       showAlert(true, 'value edited', 'success')
       }else{
       showAlert(true, 'item added to the list','success')
-      const newItem = {id: new Date().getTime().toString(), title: name}
+      const newItem = {id: new Date().getTime().toString(), title: name, completed: false}
       setList([...list, newItem])
       setName('')
     }
@@ -72,6 +78,18 @@ function App() {
     localStorage.setItem('list', JSON.stringify(list))
   }, [list])
 
+  const completeItem = (id) => {
+    setList(
+      list.map(item => {
+        if(item.id === id){
+         let status = !item.completed
+          return {...item, completed: status }
+        }
+        return item
+      })
+    )
+  }
+
   return (
   <section className="section-center">
     <form className='grocery-form' onSubmit={handleSubmit}>
@@ -91,7 +109,7 @@ function App() {
     </form>
     {list.length>0 && (
     <div className="grocrery-container">
-      <List items={list} removeItem={removeItem} editItem={editItem}/>
+      <List items={list} removeItem={removeItem} editItem={editItem} completeItem={completeItem}/>
       <button className='clear-btn' onClick={clearList}>clear items</button>
     </div>
   )}
