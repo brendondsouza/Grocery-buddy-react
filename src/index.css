@@ -96,6 +96,11 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
+.strikethrough{
+  text-decoration: line-through;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -265,7 +270,8 @@ Grocery List
   transition: var(--transition);
 }
 .edit-btn,
-.delete-btn {
+.delete-btn,
+.complete-btn {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
@@ -285,6 +291,16 @@ Grocery List
 .delete-btn:hover {
   color: var(--clr-red-dark);
 }
+
+.complete-btn {
+  color: var(--clr-grey-6);
+}
+
+.complete-btn:hover {
+  color: var(--clr-black);
+}
+
+
 .clear-btn {
   text-transform: capitalize;
   width: 10rem;
