@@ -11,7 +11,9 @@ const List = ({items, removeItem, editItem, completeItem}) => {
         <article key={id} className={`grocery-item ${completed && 'strikethrough'}`}>
           <p className='title'>{title}</p>
           <div className="btn-container">
-            <button type='button' className='complete-btn' onClick={() => completeItem(id)}>{completed ? < ImRadioChecked style={{backgroundColor: 'transparent'}} /> : <ImRadioUnchecked />}</button>
+            <button type='button' className='complete-btn' onClick={() => completeItem(id)}>
+              {completed ? < ImRadioChecked /> : <ImRadioUnchecked />}
+            </button>
             <button type='button' className='edit-btn' onClick={() => editItem(id)}>
               <FaEdit  />
             </button>
@@ -20,7 +22,6 @@ const List = ({items, removeItem, editItem, completeItem}) => {
             </button>
           </div>
         </article>
-          
         )
       })}
     </div>
