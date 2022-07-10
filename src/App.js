@@ -83,7 +83,10 @@ function App() {
       list.map(item => {
         if(item.id === id){
          let status = !item.completed
-          return {...item, completed: status }
+         if(status){
+         showAlert(true, 'item completed', 'success')
+         }
+        return {...item, completed: status }
         }
         return item
       })
