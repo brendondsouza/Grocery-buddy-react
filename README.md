@@ -1,4 +1,4 @@
-# Grocery-buddy-react
+# Grocery Buddy
 
 Grocery Buddy is a grocery list app that will create a list of groceries that you need to purchase. You can add items, edit items, delete items, mark items as purchased or clear all the items at once. 
 
