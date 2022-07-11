@@ -1,10 +1,6 @@
 # Grocery-buddy-react
-This is a grocery list app I developed using React.
 
-Live site: 
-
-
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+Grocery Buddy is a grocery list app that will create a list of groceries that you need to purchase. You can add items, edit items, delete items, mark items as purchased or clear all the items at once. 
 
 **Link to project:** [Grocery Buddy](https://yourgrocerybuddy.netlify.app/)
 
