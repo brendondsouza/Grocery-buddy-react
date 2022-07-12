@@ -15,6 +15,6 @@ This project was built using React in order to make use of reusable components. 
 ## Optimizations
 
 Completed: Added the ability to mark items as complete with a success banner\
-Next: Edit in place: Ability to edit the item in the same line that it originally displayed
+Coming soon: Edit in place: Ability to edit the item in the same line that it originally displayed
 
 
