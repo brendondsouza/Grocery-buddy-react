@@ -4,7 +4,7 @@ Grocery Buddy is a grocery list app that will create a list of groceries that yo
 
 **Link to project:** [Grocery Buddy](https://yourgrocerybuddy.netlify.app/)
 
-<img src="https://github.com/brendondsouza/Grocery-buddy-react/blob/main/grocery-buddy.gif"  alt="Jeopardy game"/>
+<img src="https://github.com/brendondsouza/Grocery-buddy-react/blob/main/grocery-buddy.gif"  alt="gif of the app in action"/>
 
 ## How It's Made:
 
